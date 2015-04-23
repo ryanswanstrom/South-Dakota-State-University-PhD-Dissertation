@@ -243,19 +243,27 @@
 %% Abstract
 \subfile{abstract}
 
-%% The rest of the paper
+%% Change the page numbering for the remainder of the dissertation
+\newpage
+\pagenumbering{arabic}
+%% set the depth of the Table of Contents
+\setcounter{tocdepth}{2}
+
+%% The rest of the paper, use as many as you need
 \subfile{section1}
-%\subfile{section2}
-%\subfile{section3}
+\subfile{section2}
+\subfile{section3}
+
+%% To add more sections
+%% just add another file named section4.tex
+%% and uncomment the next line
 %\subfile{section4}
-%\subfile{section5}
-%\subfile{section6}
 
 %% appendices
 \subfile{appendices}
 
 %% bibliography
-%\subfile{bibliography}
+\subfile{bibliography}
 
 \end{document}
 
